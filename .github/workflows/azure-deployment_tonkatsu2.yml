@@ -33,3 +33,9 @@ jobs:
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_eb9b451fa37041a18b61f27ec801ca98 }}
         package: .
+        
+    - name: npm audit action
+      uses: oke-py/npm-audit-action@v1.5.0
+      with:
+        # GitHub access token used to create an issue
+        github_token: f727fcfbd1a44cb033a3eafecb9d5ae04c2c0ed6
