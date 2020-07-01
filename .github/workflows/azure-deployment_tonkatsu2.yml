@@ -6,7 +6,7 @@ name: Build and deploy Node.js app to Azure Web App - tonkatsu2
 on:
   push:
     branches:
-      - azure-deployment
+      - master
 
 jobs:
   build-and-deploy:
