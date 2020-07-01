@@ -30,6 +30,6 @@ jobs:
       uses: azure/webapps-deploy@v1
       with:
         app-name: 'tonkatsu2'
-        slot-name: 'production'
+        slot-name: 'staging'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_eb9b451fa37041a18b61f27ec801ca98 }}
         package: .
